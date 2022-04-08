@@ -6,7 +6,7 @@ Your task is simple: Make the code compile, and make all the test expressions (u
 ## To get started...
 ... you must first obtain a copy of the source. Do that by cloning this repository:
 
-        git clone https://bitbucket.org/TedNeward/uw-swift-complexcalc swiftcomplexcalc
+        git clone https://github.com/tedneward/uw-swift-complexcalc
 
 This will create a local copy of the project.
 
