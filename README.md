@@ -4,27 +4,32 @@ This exercise is designed to test your ability to work with functions as first-c
 Your task is simple: Make the code compile, and make all the test expressions (unit tests) return true (pass). You may not change the tests that already exist; you may, however, add a few tests, as well.
 
 ## To get started...
-... you must first obtain a copy of the source. Do that by cloning this repository:
+... you must first obtain a copy of the source. You do that by cloning this repository. Two options are available to you:
 
-        git clone https://github.com/tedneward/uw-swift-complexcalc
+1. **Fork this repository.** From the GitHub repository web page, click "Fork" in the upper-right. This will create a copy of this repository in your own GitHub account. From there do a `git clone` from your own copy of the GitHub repository. (If you are unsure of the clone syntax, open the new repository in your account from the web, and click the green "Code" button--it will offer the correct syntax to use.)
 
-This will create a local copy of the project.
+2. **Clone and re-home this repository.** Open a "Command Prompt" or "Terminal" instance and use:
 
+        git clone https://github.com/tedneward/INFO449-SwiftComplexCalc
+
+    ... to do the deed. This will also create a local copy of the project on your machine in a directory called `INFO449-SwiftComplexCalc`. You will also need to "re-home" your local copy so it points to your own GitHub account; you can do this by creating a repository of this same name (`INFO449-SwiftComplexCalc`) in your GitHub account and then executing `git remote set-url origin https://github.com/[your-ID]/INFO449-SwiftComplexCalc.git`. (Needless to say, it's a lot easier to fork the repo.)
+
+    In order to store your changes to your own GitHub account, you need to create a new repository on GitHub (call it `swiftcomplexcalc`), and then change the project's settings to point to that new repository as the remote origin.
+
+        git remote set-url origin https://github.com/[your-ID]/INFO449-SwiftComplexCalc.git
+
+    Note, this will appear to succeed whether you got the syntax of the URL correct or not, so do a quick push to make sure it all worked correctly:
+
+        git push
+
+    Git will ask you for your username and password, then (if everything was done correctly), it will upload the code to the new repository, and this is your new "home" for this project going forward. Verify the files are there by viewing your GitHub project through the browser.
+
+## To work with the code...
 The code contained in this project is an XCode Playground (similar to the last assignment). Open it in XCode. It will **NOT** run--there are compile errors that you must fix before anything can run. If you wish, you can comment out the tests so that the Playground will run--however, the tests must run for you to get any credit for the assignment, so be sure to uncomment them again!
 
 > PRO TIP: When working with a new codebase, commenting out sections of code so that you can focus on a smaller part of the problem is a common trick. Then, as you make changes--such as adding an `add` method to Calculator--uncomment that particular set of tests to make sure your code matches what's in the test and does what it's supposed to do.
 
-In order to store your changes to your own GitHub account, you need to create a new repository on GitHub (call it `swiftcomplexcalc`), and then change the project's settings to point to that new repository as the remote origin.
-
-        git remote set-url origin https://github.com/[your-ID]/swiftcomplexcalc.git
-
-Note, this will appear to succeed whether you got the syntax of the URL correct or not, so do a quick push to make sure it all worked correctly:
-
-        git push
-
-Git will ask you for your username and password, then (if everything was done correctly), it will upload the code to the new repository, and this is your new "home" for this project going forward. Verify the files are there by viewing your GitHub project through the browser.
-
-**REMINDER**: Your grade for this assignment (and all future assignments) will be based on what we see in the GitHub repository, and nothing else. **If it isn't in GitHub, it doesn't exist.**
+Remember that Git uses a two-step process: first you must `commit` the code to your local copy of the repository, and then you must `push` the code from your local repository to the remote server (GitHub). Always check the website if there's any doubt--what's on the server is all that matters.
 
 Now, you can begin to work on the homework code.
 
